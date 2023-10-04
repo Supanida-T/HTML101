@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Toy</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            border: 2px solid black;
+        }
+
+        tr,
+        th {
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Search Toy</h1>
-    <label for="select-age">Select age</label><br>
-    <select name="select-age" id="select-age" style="width: 180px;"> 
-        <option value="select 1">1</option> 
-        <option value="select 2">2</option> 
-        <option value="select 3">3</option> 
-        <option value="select 4">4</option> 
-        <option value="select 5">5</option> 
-        <option value="select 6+">6+</option> 
-    </select>
-    
-  
+    <h1 style="position: relative;left: 50px;">Search Toy</h1>
+    <div class="container">
+        <div style="padding-left: 50px;">
+            <label for="select-age">Select age</label> <br>
+            <select name="select-age" id="select-age" style="width: 190px; height: 25px;">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+            </select>
+        </div>
+
+        <div style="padding-left: 10px;">
+            <label for="select-gender">Select gender</label> <br>
+            <select name="select-gender" id="select-gender" style="width: 190px; height: 25px;">
+                <option></option>
+                <option>Male</option>
+                <option>Femal</option>
+                <option>Neutral</option>
+            </select>
+        </div>
+
+        <div style="padding-left: 10px; padding-top: 18px;">
+            <button type="button" style="width: 80px; height: 25px;">Search</button>
+        </div>
+    </div>
+
+    <div style="padding-left: 50px;">
+        <table>
+            <p>X toys found</p>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+
 </body>
+
 </html>
