@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 0px;
+            border: 1px solid black;
+        }
+
+        tr,
+        th {
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Shopping Cart</h1>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th><div style="position: relative;text-align: left;">Items</div></th>
+                <th><div>Quality</div></th>
+                <th><div style="position: relative;text-align: right;">price (THB)</div></th>
+            </tr>
+            <tr>
+                <td>
+                    <div style="padding-left: 10px; margin-right: 100px;">
+                        <span><b>Toy Name</b></span>
+                        <span>By Brand</span></div>
+                        <div class="container">
+                            <div style="padding-left: 10px; padding-top: 5px; margin-right: 50px;">Gender</div>
+                            <div style="padding-top: 5px;">Age</div>
+                        </div>
+
+                        <div style="padding-left: 10px; padding-top: 10px;">
+                            <b><span style="color: red;">In Stock</span></b>
+                            <span>/</span>
+                            <b><span style="color: red;">Out Stock</span></b>
+                        </div>
+
+                        <div style="color: blue; padding-left: 10px; padding-top: 5px;">Delete</div>
+                    </div>
+                </td>
+
+                <td>
+                    <div>
+                        <select name="select-age" id="select-age" style="width: 50px; height: 25px;">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
