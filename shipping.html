@@ -13,9 +13,13 @@
         }
 
         .text_address3 {
-            width: 30%;
+            width: 250%;
             height: 30px;
-            margin-bottom: 100%;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
         }
     </style>
 </head>
@@ -37,11 +41,24 @@
         </div> 
     </div>
 
-    <div style="margin: 50px;">
+    <div class="container">
+    <div style="padding-left: 50px;"></div>
         <div>
             <label>City</label><br>
             <input type="text" class="text_address3">
         </div>
+        <div style="padding-left: 300px;">
+            <label>Province</label><br>
+            <input type="text" class="text_address3">
+        </div>
+        <div style="padding-left: 300px;">
+            <label>Postcode</label><br>
+            <input type="text" class="text_address3">
+        </div>
+    </div>
+
+    <div style="padding-left: 455px; padding-top: 50px;">
+        <button type="button" style="width: 450px; height: 30px;">Deliver to this Address</button>
     </div>
 </body>
 </html>
