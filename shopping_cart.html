@@ -12,8 +12,7 @@
             border: 1px solid black;
         }
 
-        tr,
-        th {
+        tr,th,td {
             padding: 20px;
             border: 1px solid black;
         }
@@ -21,15 +20,22 @@
         .container {
             display: flex;
         }
+
+        .s_method {
+            font-weight: bold;
+            margin-left: 200px;
+            text-align: right;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <h1>Shopping Cart</h1>
+        <h1 style="margin: 50px;">Shopping Cart</h1>
     </div>
 
-    <div>
+    <div style="margin: 50px;">
         <table>
             <tr>
                 <th><div style="position: relative;text-align: left;">Items</div></th>
@@ -57,17 +63,81 @@
                 </td>
 
                 <td>
-                    <div>
-                        <select name="select-age" id="select-age" style="width: 50px; height: 25px;">
-                            <option></option>
+                    <div style="text-align: center;">
+                        <select name="dropdown" id="dropdown" style="width: 50px; height: 25px; ">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
                     </div>
+                </td>
+
+                <td>
+                    <div style="position: relative;text-align: right;">100.00</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div style="padding-left: 10px; margin-right: 100px;">
+                        <span><b>Toy Name</b></span>
+                        <span>By Brand</span></div>
+                        <div class="container">
+                            <div style="padding-left: 10px; padding-top: 5px; margin-right: 50px;">Gender</div>
+                            <div style="padding-top: 5px;">Age</div>
+                        </div>
+
+                        <div style="padding-left: 10px; padding-top: 10px;">
+                            <b><span style="color: red;">In Stock</span></b>
+                            <span>/</span>
+                            <b><span style="color: red;">Out Stock</span></b>
+                        </div>
+
+                        <div style="color: blue; padding-left: 10px; padding-top: 5px;">Delete</div>
+                    </div>
+                </td>
+
+                <td>
+                    <div style="text-align: center;">
+                        <select name="dropdown" id="dropdown" style="width: 50px; height: 25px; ">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                    </div>
+                </td>
+
+                <td>
+                    <div style="position: relative;text-align: right;">100.00</div>
                 </td>
             </tr>
             
         </table>
+        <div style="padding-top: 5px;">
+            <div class="container">
+                <div> 
+                    <t>Shipping Method: Kerry Express</t>
+                    <t><br>Shipping fee: 150.00 THB</br></t>
+                </div>
+                <div class="s_method">
+                    <div style="padding-left: 740px;">
+                        <span>Subtotal (2 items):</span>
+                        <span style="color: brown;">200.00 THB</span><br>
+                        <span>Shipping Fee:</span>
+                        <span style="color: brown;">150.00 THB</span>
+                        <div style="padding-left: 0px; padding-top: 20px;">
+                            <button type="button" style="width: 250px; height: 30px;">Process to checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       
+        </div>
+    
+
     </div>
 </body>
 </html>
